@@ -19,7 +19,7 @@ const About = () => {
                   <div className="flex items-center mb-6">
                     <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white">
                       <img 
-                        src="/lovable-uploads/300c3ede-f95d-499c-8206-cfab97f37497.png" 
+                        src="/lovable-uploads/photo-portrait.png" 
                         alt="Peter Mbuthia" 
                         className="w-full h-full object-cover"
                       />

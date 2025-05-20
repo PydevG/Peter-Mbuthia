@@ -11,7 +11,7 @@ export const projectsData: Project[] = [
     category: "web",
     categoryIcon: <Code className="h-5 w-5" />,
     image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
-    technologies: ["Django", "Python", "PostgreSQL", "Bootstrap"],
+    technologies: ["Django", "Python", "MySQL", "Bootstrap"],
     link: "https://www.mercysafehavenacademy.edu"
   },
   {
@@ -30,8 +30,8 @@ export const projectsData: Project[] = [
     description: "Served as backend developer for Egerton University Njoro Campus Christian Union website implementing user authentication, content management, and database architecture.",
     category: "web",
     categoryIcon: <Code className="h-5 w-5" />,
-    image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66",
-    technologies: ["Django", "Python", "PostgreSQL", "RESTful API"],
+    image: "/lovable-uploads/eunccu.PNG",
+    technologies: ["Django", "Python", "MySQL", "RESTful API"],
     link: "https://eunccu.org"
   },
   {
@@ -41,7 +41,7 @@ export const projectsData: Project[] = [
     category: "web",
     categoryIcon: <Code className="h-5 w-5" />,
     image: "https://images.unsplash.com/photo-1507842217343-583bb7270b66",
-    technologies: ["Django", "Python", "PostgreSQL", "Bootstrap"],
+    technologies: ["Django", "Python", "MySQL", "Bootstrap"],
     link: "https://elibrary-project.com"
   },
   {
@@ -61,7 +61,7 @@ export const projectsData: Project[] = [
     category: "web",
     categoryIcon: <Code className="h-5 w-5" />,
     image: "/lovable-uploads/6d17cc97-1b46-4a8e-9a9b-c811dafea809.png",
-    technologies: ["Django", "Python", "PostgreSQL", "Bootstrap", "JavaScript"],
+    technologies: ["Django", "Python", "MySQL", "Bootstrap", "JavaScript"],
     link: "https://churchmanagement-demo.com"
   },
   {
@@ -71,7 +71,7 @@ export const projectsData: Project[] = [
     category: "web",
     categoryIcon: <Code className="h-5 w-5" />,
     image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    technologies: ["Django", "Python", "PostgreSQL"],
+    technologies: ["Django", "Python", "MySQL"],
     link: "https://www.stalog.cloud/"
   },
   {

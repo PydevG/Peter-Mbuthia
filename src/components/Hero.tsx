@@ -34,11 +34,11 @@ const Hero = () => {
             </Button>
           </div>
           <div className="flex items-center gap-4 pt-4">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
+            <a href="https://github.com/PydevG" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
               <Github className="h-6 w-6" />
               <span className="sr-only">GitHub</span>
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
+            <a href="https://www.linkedin.com/in/peter-ndindi-003350359/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
               <Linkedin className="h-6 w-6" />
               <span className="sr-only">LinkedIn</span>
             </a>
@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="bg-gradient absolute inset-0 rounded-full blur-3xl opacity-20"></div>
           <div className="bg-white dark:bg-gray-800 rounded-full h-64 w-64 md:h-72 md:w-72 border-4 border-purple-100 dark:border-purple-900 overflow-hidden shadow-xl relative mx-auto">
             <img 
-              src="/lovable-uploads/300c3ede-f95d-499c-8206-cfab97f37497.png" 
+              src="/lovable-uploads/photo-portrait.png" 
               alt="Peter Mbuthia" 
               className="w-full h-full object-cover"
             />
