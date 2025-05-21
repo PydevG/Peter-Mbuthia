@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { Code, User, Briefcase, Mail, Image } from "lucide-react";
+import { Code, User, Briefcase, Mail, Image, FileText } from "lucide-react";
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -45,6 +45,16 @@ const Header = () => {
     }
   };
 
+  const handleDownloadCV = () => {
+    // Create a link to download the CV
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/peter_mbuthia_cv.pdf'; // This should be replaced with the actual CV file path
+    link.download = 'Peter_Mbuthia_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md py-3' : 'bg-transparent py-5'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
@@ -68,7 +78,10 @@ const Header = () => {
               {link.name}
             </a>
           ))}
-          <Button>Download CV</Button>
+          <Button onClick={handleDownloadCV} className="flex items-center gap-2">
+            <FileText className="h-4 w-4" />
+            Download CV
+          </Button>
         </nav>
 
         {/* Mobile menu toggle */}
@@ -104,7 +117,10 @@ const Header = () => {
                 {link.name}
               </a>
             ))}
-            <Button className="w-full">Download CV</Button>
+            <Button onClick={handleDownloadCV} className="w-full flex items-center justify-center gap-2">
+              <FileText className="h-4 w-4" />
+              Download CV
+            </Button>
           </nav>
         </div>
       )}

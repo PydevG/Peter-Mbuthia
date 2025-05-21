@@ -23,6 +23,60 @@ const Projects = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: "Mercy Safe Haven Academy",
+      description: "Developed a comprehensive school website for Mercy Safe Haven Academy featuring academic programs, admissions information, and an interactive events calendar.",
+      category: "web",
+      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b",
+      technologies: ["Django", "Python", "PostgreSQL", "Bootstrap"],
+      link: "https://www.mercysafehavenacademy.edu"
+    },
+    {
+      id: 2,
+      title: "Tanolope Dairy Consultants",
+      description: "Created a modern company website for Tanolope Dairy Consultants showcasing their services, expertise, and client success stories.",
+      category: "web",
+      image: "https://images.unsplash.com/photo-1565600425657-125a1f8948b2",
+      technologies: ["Django", "Python", "Bootstrap", "JavaScript"],
+      link: "https://www.tanolopedairy.com"
+    },
+    {
+      id: 3,
+      title: "EUNCCU Website",
+      description: "Served as backend developer for Egerton University Njoro Campus Christian Union website implementing user authentication, content management, and database architecture.",
+      category: "web",
+      image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66",
+      technologies: ["Django", "Python", "PostgreSQL", "RESTful API"],
+      link: "https://eunccu.org"
+    },
+    {
+      id: 4,
+      title: "E-Library System",
+      description: "Developed a comprehensive digital library system with features for book cataloging, user borrowing, and administrative management.",
+      category: "web",
+      image: "https://images.unsplash.com/photo-1507842217343-583bb7270b66",
+      technologies: ["Django", "Python", "PostgreSQL", "Bootstrap"],
+      link: "https://elibrary-project.com"
+    },
+    {
+      id: 5,
+      title: "Context Expert Agencies",
+      description: "Built a professional company website for Context Expert Agencies with service listings, team profiles, and client testimonial features.",
+      category: "web",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
+      technologies: ["Django", "Python", "JavaScript", "Bootstrap"],
+      link: "https://contextexpertagencies.com"
+    },
+    {
+      id: 6,
+      title: "Church Management System",
+      description: "Developed a comprehensive system for church administration including membership management, event scheduling, and financial tracking.",
+      category: "web",
+      image: "https://images.unsplash.com/photo-1600457307358-2704506ae589",
+      technologies: ["Django", "Python", "PostgreSQL", "Bootstrap", "JavaScript"],
+      link: "https://churchmanagement-demo.com"
+    },
+    {
+      id: 7,
       title: "Blog CMS",
       description: "Created a content management system that allows users to create, edit, and manage blog posts with a custom Django admin interface and database optimization.",
       category: "web",
@@ -31,15 +85,7 @@ const Projects = () => {
       link: "https://www.stalog.cloud/"
     },
     {
-      id: 2,
-      title: "Portfolio Website",
-      description: "Personal portfolio website built with modern technologies to showcase projects and skills.",
-      category: "web",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7",
-      technologies: ["React", "Tailwind CSS", "TypeScript"]
-    },
-    {
-      id: 3,
+      id: 8,
       title: "Brand Identity Design",
       description: "Complete brand identity package for a local business including logo, color scheme, and brand guidelines.",
       category: "design",
@@ -47,7 +93,7 @@ const Projects = () => {
       technologies: ["Illustrator", "Photoshop"]
     },
     {
-      id: 4,
+      id: 9,
       title: "Nature Photography Collection",
       description: "A series of nature photographs capturing landscapes and wildlife in Kenya.",
       category: "photo",
