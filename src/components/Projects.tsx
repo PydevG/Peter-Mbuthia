@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Card, CardContent, CardDescription, CardFooter, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Code, ExternalLink, Image, Database } from "lucide-react";
+import { Code, ExternalLink, Image, Database, ImageOff } from "lucide-react";
 
 type ProjectCategory = "all" | "web" | "design" | "photo";
 
@@ -19,6 +19,7 @@ interface Project {
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState<ProjectCategory>("all");
+  const [imageError, setImageError] = useState<Record<number, boolean>>({});
   
   const projects: Project[] = [
     {
@@ -35,7 +36,7 @@ const Projects = () => {
       title: "Tanolope Dairy Consultants",
       description: "Created a modern company website for Tanolope Dairy Consultants showcasing their services, expertise, and client success stories.",
       category: "web",
-      image: "https://images.unsplash.com/photo-1565600425657-125a1f8948b2",
+      image: "https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa",
       technologies: ["Django", "Python", "Bootstrap", "JavaScript"],
       link: "https://www.tanolopedairy.com"
     },
@@ -71,7 +72,7 @@ const Projects = () => {
       title: "Church Management System",
       description: "Developed a comprehensive system for church administration including membership management, event scheduling, and financial tracking.",
       category: "web",
-      image: "https://images.unsplash.com/photo-1600457307358-2704506ae589",
+      image: "https://images.unsplash.com/photo-1517505657539-8c5be9c2b3f1",
       technologies: ["Django", "Python", "PostgreSQL", "Bootstrap", "JavaScript"],
       link: "https://churchmanagement-demo.com"
     },
@@ -110,6 +111,13 @@ const Projects = () => {
     web: <Code className="h-5 w-5" />,
     design: <Image className="h-5 w-5" />,
     photo: <Image className="h-5 w-5" />
+  };
+
+  const handleImageError = (projectId: number) => {
+    setImageError(prev => ({
+      ...prev,
+      [projectId]: true
+    }));
   };
   
   return (
@@ -154,12 +162,20 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project) => (
             <Card key={project.id} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col">
-              <div className="h-48 overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
+              <div className="h-48 overflow-hidden relative">
+                {imageError[project.id] ? (
+                  <div className="w-full h-full flex flex-col items-center justify-center bg-gray-200 dark:bg-gray-800">
+                    <ImageOff className="h-10 w-10 text-gray-400 mb-2" />
+                    <p className="text-sm text-gray-500">Image unavailable</p>
+                  </div>
+                ) : (
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    onError={() => handleImageError(project.id)}
+                  />
+                )}
               </div>
               <CardContent className="p-6 flex-grow">
                 <div className="flex items-center mb-4">
