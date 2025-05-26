@@ -4,8 +4,6 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 console.log('=== ENV DEBUG ===');
-console.log('DB_USER:', process.env.DB_USER);
-console.log('DB_PASS:', process.env.DB_PASS, typeof process.env.DB_PASS);
 console.log('=================');
 
 export const pool = new Pool({

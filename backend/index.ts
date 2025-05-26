@@ -6,7 +6,14 @@ import * as cors from 'cors';
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+// CORS configuration
+app.use(
+  cors({
+    origin: 'https://nexus-code-studio-front.onrender.com/', 
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 // Mount the contact API route
