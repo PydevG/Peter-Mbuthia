@@ -24,67 +24,67 @@ const ProjectCarousel = () => {
     {
       id: 1,
       title: "EUNCCU Church Event Posters",
-      image: "/lovable-uploads/5a518395-205e-4502-ba16-4381545c49ab.png",
+      image: "/lovable-uploads/5a518395-205e-4502-ba16-4381545c49ab.webp",
       category: "Event Design"
     },
     {
       id: 2,
       title: "University Christian Union Poster",
-      image: "/lovable-uploads/7088983a-2809-4c2b-ae5e-c40459289065.png",
+      image: "/lovable-uploads/7088983a-2809-4c2b-ae5e-c40459289065.webp",
       category: "Event Design"
     },
     {
       id: 3,
       title: "Tanolope Dairy Website Promo",
-      image: "/lovable-uploads/677f8e2d-e7fb-4f15-9472-48eacf881814.png",
+      image: "/lovable-uploads/677f8e2d-e7fb-4f15-9472-48eacf881814.webp",
       category: "Web & Graphic Design"
     },
     {
       id: 4,
       title: "Church Weekend Services Poster",
-      image: "/lovable-uploads/6b8ba1c8-b1a1-42cc-aab5-f32e2e51cfca.png",
+      image: "/lovable-uploads/6b8ba1c8-b1a1-42cc-aab5-f32e2e51cfca.webp",
       category: "Event Design"
     },
     {
       id: 5,
       title: "Christian Theme Poster",
-      image: "/lovable-uploads/fdb0f89f-a7ce-4982-ba64-e6e7c00e3c44.png",
+      image: "/lovable-uploads/fdb0f89f-a7ce-4982-ba64-e6e7c00e3c44.webp",
       category: "Event Design"
     },
     {
       id: 6,
       title: "Bible Study Promotional Poster",
-      image: "/lovable-uploads/6d17cc97-1b46-4a8e-9a9b-c811dafea809.png",
+      image: "/lovable-uploads/6d17cc97-1b46-4a8e-9a9b-c811dafea809.webp",
       category: "Event Design"
     },
     {
       id: 7,
       title: "Youth Ministry Event Flyer",
-      image: "/lovable-uploads/f06f5243-e8f3-4b06-a163-04ae9bcb9069.png",
+      image: "/lovable-uploads/f06f5243-e8f3-4b06-a163-04ae9bcb9069.webp",
       category: "Event Design"
     },
     {
       id: 8,
       title: "School Election Campaign Poster",
-      image: "/lovable-uploads/42277f2f-cf29-4ec5-9372-e82faa44defd.png",
+      image: "/lovable-uploads/42277f2f-cf29-4ec5-9372-e82faa44defd.webp",
       category: "Promotional Design"
     },
     {
       id: 9,
       title: "Church Event Promotional Banner",
-      image: "/lovable-uploads/ce5e1eaa-d3b8-489d-9989-55776ad71c4f.png",
+      image: "/lovable-uploads/ce5e1eaa-d3b8-489d-9989-55776ad71c4f.webp",
       category: "Event Design"
     },
     {
       id: 10,
       title: "Wedding Pre-Invitation Design",
-      image: "/lovable-uploads/62965e4e-e38c-4b7e-94f5-b0607de7e888.png",
+      image: "/lovable-uploads/62965e4e-e38c-4b7e-94f5-b0607de7e888.webp",
       category: "Invitation Design"
     },
     {
       id: 11,
       title: "Wedding Save the Date Design",
-      image: "/lovable-uploads/6a4a7a15-574b-45b3-80d3-57dcc9d8b5cb.png",
+      image: "/lovable-uploads/6a4a7a15-574b-45b3-80d3-57dcc9d8b5cb.webp",
       category: "Invitation Design"
     }
   ];

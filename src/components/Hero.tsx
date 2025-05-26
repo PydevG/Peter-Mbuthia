@@ -52,7 +52,7 @@ const Hero = () => {
           <div className="bg-gradient absolute inset-0 rounded-full blur-3xl opacity-20"></div>
           <div className="bg-white dark:bg-gray-800 rounded-full h-64 w-64 md:h-72 md:w-72 border-4 border-purple-100 dark:border-purple-900 overflow-hidden shadow-xl relative mx-auto">
             <img 
-              src="/lovable-uploads/photo-portrait.png" 
+              src="/lovable-uploads/photo-portrait.webp" 
               alt="Peter Mbuthia" 
               className="w-full h-full object-cover"
             />

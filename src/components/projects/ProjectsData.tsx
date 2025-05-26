@@ -20,7 +20,7 @@ export const projectsData: Project[] = [
     description: "Created a modern company website for Tanolope Dairy Consultants showcasing their services, expertise, and client success stories.",
     category: "web",
     categoryIcon: <Code className="h-5 w-5" />,
-    image: "/lovable-uploads/677f8e2d-e7fb-4f15-9472-48eacf881814.png",
+    image: "/lovable-uploads/677f8e2d-e7fb-4f15-9472-48eacf881814.webp",
     technologies: ["Django", "Python", "Bootstrap", "JavaScript"],
     link: "https://www.tanolopedairy.com"
   },
@@ -30,7 +30,7 @@ export const projectsData: Project[] = [
     description: "Served as backend developer for Egerton University Njoro Campus Christian Union website implementing user authentication, content management, and database architecture.",
     category: "web",
     categoryIcon: <Code className="h-5 w-5" />,
-    image: "/lovable-uploads/eunccu.PNG",
+    image: "/lovable-uploads/eunccu.webp",
     technologies: ["Django", "Python", "MySQL", "RESTful API"],
     link: "https://eunccu.org"
   },
@@ -60,7 +60,7 @@ export const projectsData: Project[] = [
     description: "Developed a comprehensive system for church administration including membership management, event scheduling, and financial tracking.",
     category: "web",
     categoryIcon: <Code className="h-5 w-5" />,
-    image: "/lovable-uploads/6d17cc97-1b46-4a8e-9a9b-c811dafea809.png",
+    image: "/lovable-uploads/6d17cc97-1b46-4a8e-9a9b-c811dafea809.webp",
     technologies: ["Django", "Python", "MySQL", "Bootstrap", "JavaScript"],
     link: "https://churchmanagement-demo.com"
   },
