@@ -22,7 +22,7 @@ const Admin = () => {
     const fetchSubmissions = async () => {
       try {
         const { data, error } = await supabase
-          .from('contact_submissions')
+          .from('contact')
           .select('*')
           .order('created_at', { ascending: false });
 

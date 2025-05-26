@@ -1,54 +1,52 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
-import { toast } from "sonner";
-import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
-  const [name, setName] = useState("");
+  const [sender_name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    try {
-      // Submit contact form data to Supabase
-      const { error } = await supabase
-        .from('contact_submissions')
-        .insert({
-          name,
-          email,
-          message
-        });
-      
-      if (error) {
-        throw error;
-      }
-      
-      toast.success("Message sent successfully!", {
-        description: "Thanks for reaching out. I'll get back to you soon!",
-      });
-      
-      // Reset form fields
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  const formData = {
+    sender_name,
+    email,
+    message,
+  };
+
+  try {
+    const response = await fetch("http://localhost:5000/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      const result = await response.json();
+      console.log("Server response:", result);
+      alert("Message sent successfully!");
       setName("");
       setEmail("");
       setMessage("");
-    } catch (error) {
-      console.error("Error submitting contact form:", error);
-      toast.error("Failed to send message", {
-        description: "Please try again later or contact me directly via email.",
-      });
-    } finally {
-      setIsSubmitting(false);
+    } else {
+      const errorData = await response.json();
+      console.error("Error response from server:", errorData);
+      alert("Something went wrong. Please try again.");
     }
-  };
+  } catch (error) {
+    console.error("Fetch error:", error);
+    alert("Network error. Please try again.");
+  }
+};
+
 
   return (
     <section id="contact" className="py-16">
@@ -149,7 +147,7 @@ const Contact = () => {
                     <Input
                       id="name"
                       placeholder="John Doe"
-                      value={name}
+                      value={sender_name}
                       onChange={(e) => setName(e.target.value)}
                       required
                     />
