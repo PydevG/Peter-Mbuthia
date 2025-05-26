@@ -21,7 +21,7 @@ const handleSubmit = async (e: React.FormEvent) => {
   };
 
   try {
-    const response = await fetch("https://https://nexus-code-studio.onrender.com/api/contact", {
+    const response = await fetch("https://nexus-code-studio.onrender.com/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

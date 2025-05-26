@@ -20,5 +20,5 @@ app.use(express.json());
 app.use('/api/contact', contactRoutes);
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on https://nexus-code-studio.onrender.com:${PORT}`);
 });
