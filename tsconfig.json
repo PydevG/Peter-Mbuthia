@@ -1,10 +1,15 @@
 {
   "files": [],
+  "composite": true,
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "jsx": "react",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
@@ -15,5 +20,7 @@
     "allowJs": true,
     "noUnusedLocals": false,
     "strictNullChecks": false
-  }
+  },
+  "include": ["src/**/*"],
+
 }
